@@ -1,0 +1,303 @@
+.profile{
+    display: flex;
+    position:relative;
+    top: 100px;
+    left: 56%;
+    padding: 10;
+    max-width: 350px;
+    border-radius: 100px;
+    transform: translateX(0x);
+    transition: .3s all;
+}
+.profile:hover{
+    border-radius: 40px;
+    box-shadow: 6px 6px 40px 10px;
+    transform: translateX(10px);
+}
+.infoPicRight{
+    display: flex;
+    position:absolute;
+    top: 100px;
+    right: 150%;
+    padding: 10;
+    max-width: 350px;
+    transform: translateX(0x);
+    transition: .3s all;
+}
+
+.infoPicLeft{
+    display: flex;
+    position:absolute;
+    top: 100px;
+    left: 150%;
+    padding: 10;
+    max-width: 350px;
+    transform: translateX(0x);
+    transition: .3s all;
+}
+.btnBg:hover{
+    border-radius: 40px;
+    box-shadow: 6px 6px 40px 10px;
+    transform: translateX(10px);
+}
+.boxLeft:hover{
+    box-shadow: 6px 6px 40px 10px;
+    transform: translateX(40px);
+}
+.boxRight:hover{
+    box-shadow: 6px 6px 40px 10px;
+    transform: translateX(40px);
+}
+*{
+    display:flexbox;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    overflow:hidden;
+    list-style: none;
+    padding: 10px 100px;
+    display: flex;
+
+}
+.navbar li{
+    float:left;
+    position: relative;
+    transform: translateX(0x);
+    transition: .3s all;
+}
+.navbar a{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'SFUI';
+    padding: 10px 30px;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+}
+.homeclr a:hover{
+    border-radius: 40px;
+    font-size: 20px;
+    background: rgb(24, 206, 109);
+    transition: .3s;
+    padding: 10px 95px;
+    color: white;
+}
+.facebook a:hover{
+    border-radius: 40px;
+    font-size: 20px;
+    background: linear-gradient(rgb(55, 143, 232), rgb(13, 80, 162));
+    transition: .3s;
+    padding: 10px 95px;
+    color: white;
+}
+.instagram a:hover{
+    border-radius: 40px;
+    font-size: 20px;
+    background: linear-gradient(rgb(182, 21, 223), rgb(212, 12, 12));
+    transition: .3s;
+    padding: 10px 95px;
+    color: white;
+}
+.btnBg a:hover{
+    border-radius: 40px;
+    font-size: 20px;
+    background: rgb(24, 206, 109);
+    transition: .3s;
+    padding: 10px 95px;
+    color: white;
+}
+.btnBg{
+    background: black;
+    color: white;
+    border-radius: 40px;
+    padding: 10px 95px;
+}
+#bordering {
+    /* border: 1px solid #0068fb; */
+    padding: 10px;
+    box-shadow: 0px 10px 30px 3px #119b1c;
+  }
+  #profileBg {
+    /* border: 1px solid #0068fb; */
+    padding: 10px;
+    box-shadow: 0px 10px 30px -6px #000000;
+  }
+body{
+    min-height: 100vh;
+    margin: 0;
+}
+.main{
+    position: relative;
+}
+.mainlayout{
+    position: relative;
+}
+#bg-img{
+   /* background-image: linear-gradient(rgb(18, 201, 48), rgb(218, 255, 218)); */
+   background-color: #ffffff;
+}
+.boxRight {
+    top: 400px;
+    height: 500px;
+    left: 26%;
+    min-width: auto;
+    max-width: 600px;
+    margin: 50px auto 0px;
+    background-color:white;
+    border-radius: 30px;
+    font-size: 1em;
+    position: relative;
+    margin-top: 50px;
+    transform: translateX(0x);
+    transition: .3s all;
+}
+.boxLeft {
+    top: 400px;
+    height: 500px;
+    right: 26%;
+    min-width: auto;
+    max-width: 600px;
+    margin: 50px auto 0px;
+    background-color:white;
+    border-radius: 30px;
+    position: relative;
+    margin-top: 50px;
+    transform: translateX(0x);
+    transition: .3s all;
+}
+
+.titles{
+    text-transform: uppercase;
+    position: absolute;
+    top: 200px;
+    font-size: 33px;
+    text-align: center;
+    padding: 2%;
+    font-family: 'SFUI';
+}
+.context{
+    text-transform:none;
+    position: relative;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    text-align:left;
+    left: 200px;
+    font-size: 29px;
+    padding: 0%;
+    font-family: 'SFUI-light';
+}
+h1{
+    text-transform: uppercase;
+    top: 90px;
+    left: 19%;
+    font-size:6em;
+    font-family:'SFUI';
+    position:absolute;
+    /* background-image: url(images/profile.jpg);
+    background-size: 100% 100%;
+    color: transparent;
+    -webkit-background-clip:text; */
+}
+h2{
+    text-transform: uppercase;
+    top: 210px;
+    left: 25%;
+    font-size:6em;
+    font-family:'SFUI';
+    position:absolute;
+    /* background-image: url(images/profile.jpg);
+    background-size: 100% 100%;
+    color: transparent;
+    -webkit-background-clip:text; */
+}
+h3{
+    text-transform: uppercase;
+    top: 450px;
+    left: 8%;
+    font-size:9em;
+    font-family:'SFUI';
+    position:absolute;
+    /* background-image: url(images/profile.jpg);
+    background-size: 100% 100%;
+    color: transparent;
+    -webkit-background-clip:text; */
+}
+.dot{
+    position:absolute;
+    right: 40%;
+    top: 410px;
+    height: 95px;
+    width: 95px;
+    background-color: #f00a0a;
+    border-radius: 50%;
+    display: inline-block;
+}
+.footer{
+    position: sticky;
+    padding: 10px;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+}
+
+.footer h{
+    position: absolute;
+    font-family: SFUI;
+    color: white;
+    font-size: 4em;
+    padding: 20px;
+}
+
+#aboutMore{
+    position: absolute;
+    font-family: SFUI-light;
+    color: white;
+    font-size: 1.6em;
+    top: 55px;
+    padding: 20px;
+}
+#moreTxt{
+    position: absolute;
+    font-family: SFUI-light;
+    left: 700px;
+    color: white;
+    font-size: 1.6em;
+    top: 330px;
+    padding: 20px;
+}
+#logoPic{
+    position: absolute;
+    right: 0;
+    color: white;
+    height: 200px;
+    width: 400px;
+    padding: 20px;
+}
+#facebookLG{
+    position: relative;
+    top: 300px;
+    left: 20px;
+    color: white;
+    height: 69px;
+    width: 69px;
+}
+#instagramLG{
+    position: relative;
+    top: 300px;
+    left: 20px;
+    color: white;
+    height: 69px;
+    width: 69px;
+}
+@font-face {
+    font-family:"SFUI";
+    src: url('fonts/SFUIText/SFUIText-Heavy.otf');
+}
+@font-face {
+    font-family: SFUI-light;
+    src: url('fonts/SFUIText/SFUIText-Light.otf');
+}
