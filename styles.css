@@ -603,4 +603,8 @@ h3{
         font-family: SFUI-light;
         src: url('fonts/SFUIText/SFUIText-Light.otf');
     }
+    @font-face {
+        font-family: SFUI-light;
+        src: url('fonts/SFUIText/SFUIText-Light.otf');
+    }
 }
