@@ -445,7 +445,7 @@ h3{
     .boxRight {
         top: 400px;
         height: 500px;
-        left: 175%;
+        left: 225%;
         min-width: auto;
         max-width: 600px;
         margin: 50px auto 0px;
@@ -460,7 +460,7 @@ h3{
     .boxLeft {
         top: 400px;
         height: 500px;
-        left: 10%;
+        left: 69%;
         min-width: auto;
         max-width: 600px;
         margin: 50px auto 0px;
