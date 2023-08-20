@@ -136,7 +136,7 @@ body{
 }
 #bg-img{
    /* background-image: linear-gradient(rgb(18, 201, 48), rgb(218, 255, 218)); */
-   background-color: #ffffff;
+   background-image: linear-gradient(#dff5ea, white, #dff5ea);
 }
 .boxRight {
     top: 400px;
@@ -312,8 +312,8 @@ h3{
     .profile{
         left: 310px;
         position:relative;
-        height: 300px;
-        width: 300px;
+        height: 400px;
+        width: 400px;
         top: 100px;
         border-radius: 50px;
         transform: translateX(0x);
@@ -437,7 +437,7 @@ h3{
     }
     #bg-img{
        /* background-image: linear-gradient(rgb(18, 201, 48), rgb(218, 255, 218)); */
-       background-color: #ffffff;
+       background-image: linear-gradient(#dff5ea, white, #dff5ea);
     }
     .boxRight {
         top: 1500px;
