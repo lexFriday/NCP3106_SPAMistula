@@ -304,9 +304,9 @@ h3{
 
 /* Mobile View */
 @media only screen and (max-width:1080px){
-    /* *{
-        width: 100%;
-    } */
+    *{
+        width: 0;
+    }
     .profile{
         display: flex;
         position:relative;
@@ -364,7 +364,7 @@ h3{
         justify-content: space-between;
         overflow:scroll;
         list-style: none;
-        padding: 90px 50px;
+        padding: 90px 0px;
         display: inline-flex;
     
     }
