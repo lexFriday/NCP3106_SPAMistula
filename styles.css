@@ -450,13 +450,12 @@ h3{
     }
     .boxLeft {
         top: 1500px;
-        height: 500px;
+        height: 30px;
         left: 150px;
         width: 1000px;
         background-color:white;
         border-radius: 30px;
         position: relative;
-        margin-top: 50px;
         transform: translateX(0x);
         transition: .3s all;
     }
