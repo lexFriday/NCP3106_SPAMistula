@@ -312,8 +312,8 @@ h3{
     .profile{
         left: 310px;
         position:relative;
-        height: 400px;
-        width: 400px;
+        height: 300px;
+        width: 300px;
         top: 100px;
         border-radius: 50px;
         transform: translateX(0x);
@@ -365,19 +365,19 @@ h3{
     .infoPicRight:hover{
         opacity: 0.5;
     }
-    .navbar{
-        /* position: sticky;
+    /* .navbar{
+        position: sticky;
         margin: 0;
         padding: 30px 500px;
         top: 0;
         justify-content: space-between;
         overflow:hidden;
         list-style-type: none;
-     */
-        /* padding: 90px center; */
-        /* display: block; */
     
-    }
+        padding: 90px center;
+        display: block;
+    
+    } */
     .navbar li{
         float: left;
         transform: translateX(0x);
