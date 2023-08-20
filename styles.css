@@ -458,14 +458,13 @@ h3{
     }
     .boxRight {
         top: 1500px;
-        height: 500px;
-        width: 1000px;
+        height: 600px;
+        width: 999px;
         left: 150px;
         background-color:white;
         border-radius: 30px;
         font-size: 1em;
         position: relative;
-        margin-top: 50px;
         transform: translateX(0x);
         transition: .3s all;
     }
@@ -484,17 +483,18 @@ h3{
     .titles{
         text-transform: uppercase;
         position: relative;
-        top: -396px;
-        font-size: 2em;
+        top: -390px;
+        font-size: 3em;
         text-align:left;
         padding: 2%;
         font-family: 'SFUI';
     }
     .context{
         position: relative;
-        top: -470px;
+        top: -450px;
         width: 400px;
-        font-size: 1.8em;
+        font-size: 2em;
+        
         font-family: 'SFUI-light';
     }
     h1{
