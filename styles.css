@@ -358,24 +358,26 @@ h3{
         box-shadow: 6px 6px 40px 10px;
         transform: translateX(40px);
     }
-    .navbar{
-        position: static;
+    .navbar ul{
+        position: sticky;
+        margin: 0;
         top: 0;
-        width: 500px;
         align-items: center;
         justify-content: space-between;
         overflow:hidden;
         list-style: none;
-        padding: 90px center;
+        padding: 0;
+        /* padding: 90px center; */
         display: inline-flex;
     
     }
     .navbar li{
-        float:left;
+        float: left;
         transform: translateX(0x);
         transition: .3s all;
     }
     .navbar a{
+        display: block;
         text-transform: uppercase;
         text-align: center;
         font-size: 20px;
@@ -388,22 +390,6 @@ h3{
         border-radius: 40px;
         font-size: 20px;
         background: rgb(24, 206, 109);
-        transition: .3s;
-        padding: 10px 95px;
-        color: white;
-    }
-    .facebook a:hover{
-        border-radius: 40px;
-        font-size: 20px;
-        background: linear-gradient(rgb(55, 143, 232), rgb(13, 80, 162));
-        transition: .3s;
-        padding: 10px 95px;
-        color: white;
-    }
-    .instagram a:hover{
-        border-radius: 40px;
-        font-size: 20px;
-        background: linear-gradient(rgb(182, 21, 223), rgb(212, 12, 12));
         transition: .3s;
         padding: 10px 95px;
         color: white;
@@ -450,8 +436,7 @@ h3{
         top: 2000px;
         height: 500px;
         width: 1000px;
-        left: 60%;
-        margin: 50px 311px 0px;
+        left: 150px;
         background-color:white;
         border-radius: 30px;
         font-size: 1em;
@@ -466,7 +451,7 @@ h3{
         left: 60%;
         min-width: auto;
         max-width: 600px;
-        margin: 50px auto 0px;
+        margin: 150px;
         background-color:white;
         border-radius: 30px;
         position: relative;
@@ -525,8 +510,8 @@ h3{
     h3{
         text-transform: uppercase;
         top: 1450px;
-        left: 8%;
-        font-size:inherit;
+        left: 20px;
+        font-size:5.7em;
         font-family:'SFUI';
         position:absolute;
         /* background-image: url(images/profile.jpg);
