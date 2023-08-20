@@ -311,8 +311,8 @@ h3{
         display: flex;
         position:relative;
         height: 400px;
-        width: 600px;
-        top: 290px;
+        width: 400px;
+        top: 0px;
         left: 276%;
         border-radius: 50px;
         transform: translateX(0x);
@@ -359,29 +359,28 @@ h3{
     }
     .navbar{
         position: static;
-        top: 90;
+        top: 0;
+        width: 500px;
         align-items: center;
         justify-content: space-between;
-        overflow:scroll;
+        overflow:hidden;
         list-style: none;
-        padding: 90px 0px;
+        padding: 90px center;
         display: inline-flex;
     
     }
     .navbar li{
         float:left;
-        position: relative;
         transform: translateX(0x);
         transition: .3s all;
     }
     .navbar a{
         text-transform: uppercase;
         text-align: center;
-        font-size: 50px;
+        font-size: 20px;
         font-family: 'SFUI';
-        padding: 10px 30px;
+        padding: 10px 10px;
         color: black;
-        display:inline-flexbox;
         text-decoration: none;
     }
     .homeclr a:hover{
