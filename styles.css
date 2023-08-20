@@ -326,7 +326,7 @@ h3{
         transform: translateX(10px);
     }
     .infoPicRight{
-        opacity: 0.2;
+        opacity: 0;
         width: auto;
         height: auto;
         top: 110px;
@@ -340,7 +340,7 @@ h3{
         width: auto;
         height: auto;
         position:relative;
-        opacity: 0.2;
+        opacity: 0;
         top: 110px;
         left: 150px;
         transform: translateX(0x);
@@ -355,6 +355,9 @@ h3{
         height: 700px;
         color: rgb(128, 255, 119);
         transform: translateY(40px);
+    }
+    .infoPicLeft:hover{
+        opacity: 1;
     }
     .boxRight:hover{
         height: 700px;
@@ -437,7 +440,7 @@ h3{
     }
     .boxRight {
         top: 1500px;
-        height: 500px;
+        height: 30px;
         width: 1000px;
         left: 150px;
         background-color:white;
