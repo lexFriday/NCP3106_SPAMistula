@@ -321,6 +321,7 @@ h3{
     }
     .profile:hover{
         border-radius: 5px;
+        height: 350px;
         box-shadow: 6px 6px 40px 10px;
         transform: translateX(10px);
     }
@@ -351,12 +352,14 @@ h3{
         transform: translateX(10px);
     }
     .boxLeft:hover{
-        box-shadow: 6px 6px 40px 10px;
-        transform: translateX(40px);
+        height: 700px;
+        color: rgb(128, 255, 119);
+        transform: translateY(40px);
     }
     .boxRight:hover{
-        box-shadow: 6px 6px 40px 10px;
-        transform: translateX(40px);
+        height: 700px;
+        color: rgb(128, 255, 119);
+        transform: translateY(40px);
     }
     .navbar ul{
         position: sticky;
