@@ -380,20 +380,20 @@ h3{
         overflow:hidden;
         list-style-type: none;
     } 
-    /* .navbar li{
-        float: left;
-        align-items: center;
-        transition: .3s all;
-    }
     .navbar a{
         display: inline-flex;
         text-transform: uppercase;
         text-align: center;
-        font-size: 20px;
+        font-size: 25px;
         font-family: 'SFUI';
         padding: 10px 10px;
         color: black;
         text-decoration: none;
+    }
+    /* .navbar li{
+        float: left;
+        align-items: center;
+        transition: .3s all;
     }
     .homeclr a:hover{
         border-radius: 40px;
@@ -505,10 +505,6 @@ h3{
         font-size:12em;
         font-family:'SFUI';
         position:absolute;
-        /* background-image: url(images/profile.jpg);
-        background-size: 100% 100%;
-        color: transparent;
-        -webkit-background-clip:text; */
     }
     h2{
         text-transform: uppercase;
@@ -517,10 +513,6 @@ h3{
         font-size:12em;
         font-family:'SFUI';
         position:absolute;
-        /* background-image: url(images/profile.jpg);
-        background-size: 100% 100%;
-        color: transparent;
-        -webkit-background-clip:text; */
     }
     h3{
         text-transform: uppercase;
@@ -529,10 +521,6 @@ h3{
         font-size:5.7em;
         font-family:'SFUI';
         position:absolute;
-        /* background-image: url(images/profile.jpg);
-        background-size: 100% 100%;
-        color: transparent;
-        -webkit-background-clip:text; */
     }
     .dot{
         position:absolute;
