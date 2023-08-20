@@ -302,17 +302,19 @@ h3{
     padding-bottom: 600px;
 }
 
+
+
 /* Mobile View */
 @media only screen and (max-width:1080px){
     *{
         width: 0;
     }
     .profile{
+        left: 310px;
         position:relative;
-        height: 400px;
-        width: 400px;
-        top: 0px;
-        right: 100px;
+        height: 300px;
+        width: 300px;
+        top: 100px;
         border-radius: 50px;
         transform: translateX(0x);
         transition: .3s all;
@@ -497,9 +499,10 @@ h3{
     }
     h1{
         text-transform: uppercase;
-        top: 90px;
-        left: 49%;
-        font-size:15em;
+        margin: auto;
+        top: 520px;
+        left: 140px;
+        font-size:12em;
         font-family:'SFUI';
         position:absolute;
         /* background-image: url(images/profile.jpg);
@@ -509,9 +512,9 @@ h3{
     }
     h2{
         text-transform: uppercase;
-        top: 260px;
-        left: 25%;
-        font-size:15em;
+        top: 520px;
+        left: 110px;
+        font-size:12em;
         font-family:'SFUI';
         position:absolute;
         /* background-image: url(images/profile.jpg);
@@ -533,8 +536,8 @@ h3{
     }
     .dot{
         position:absolute;
-        left:268%;
-        top: 670px;
+        left:268px;
+        top: 370px;
         height: 95px;
         width: 95px;
         background-color: #f00a0a;
