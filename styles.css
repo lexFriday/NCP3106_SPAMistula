@@ -352,17 +352,18 @@ h3{
         transform: translateX(10px);
     }
     .boxLeft:hover{
-        height: 700px;
         color: rgb(128, 255, 119);
         transform: translateY(40px);
     }
     .infoPicLeft:hover{
-        opacity: 1;
+        opacity: 0.2;
     }
     .boxRight:hover{
-        height: 700px;
         color: rgb(128, 255, 119);
         transform: translateY(40px);
+    }
+    .infoPicRight:hover{
+        opacity: 0.2;
     }
     .navbar ul{
         position: sticky;
@@ -416,7 +417,7 @@ h3{
     }
     #bordering {
         padding: 10px;
-        box-shadow: 0px 10px 30px 3px #119b1c;
+        box-shadow: 0px 10px 30px 3px #2a7230;
       }
       #profileBg {
         /* border: 1px solid #0068fb; */
@@ -440,7 +441,7 @@ h3{
     }
     .boxRight {
         top: 1500px;
-        height: 30px;
+        height: 500px;
         width: 1000px;
         left: 150px;
         background-color:white;
@@ -453,7 +454,7 @@ h3{
     }
     .boxLeft {
         top: 1500px;
-        height: 30px;
+        height: 500px;
         left: 150px;
         width: 1000px;
         background-color:white;
