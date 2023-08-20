@@ -298,31 +298,36 @@ h3{
     font-family: SFUI-light;
     src: url('fonts/SFUIText/SFUIText-Light.otf');
 }
-@media only screen and (max-width: 400px){
-    *{
+#bottomSpace{
+    padding-bottom: 600px;
+}
+
+/* Mobile View */
+@media only screen and (max-width:800px){
+    /* *{
         width: 100%;
-    }
+    } */
     .profile{
         display: flex;
         position:relative;
-        top: 110px;
-        left: 286%;
-        padding: 60;
-        max-width: 300px;
-        border-radius: 20px;
+        height: 400px;
+        width: 600px;
+        top: 290px;
+        left: 276%;
+        border-radius: 50px;
         transform: translateX(0x);
         transition: .3s all;
     }
     .profile:hover{
-        border-radius: 40px;
+        border-radius: 5px;
         box-shadow: 6px 6px 40px 10px;
         transform: translateX(10px);
     }
     .infoPicRight{
         display: flex;
-        position:absolute;
-        top: 100px;
-        right: 150%;
+        position:relative;
+        top: 1800px;
+        left: 189%;
         padding: 10;
         max-width: 350px;
         transform: translateX(0x);
@@ -331,8 +336,8 @@ h3{
     
     .infoPicLeft{
         display: flex;
-        position:absolute;
-        top: 100px;
+        position:relative;
+        top: 1800px;
         left: 150%;
         padding: 10;
         max-width: 350px;
@@ -354,12 +359,12 @@ h3{
     }
     .navbar{
         position: sticky;
-        top: 0;
+        top: 90;
         align-items: center;
         justify-content: space-between;
-        overflow:hidden;
+        overflow:scroll;
         list-style: none;
-        padding: 70px 100px;
+        padding: 90px 100px;
         display: inline-flex;
     
     }
@@ -372,7 +377,7 @@ h3{
     .navbar a{
         text-transform: uppercase;
         text-align: center;
-        font-size: 15px;
+        font-size: 50px;
         font-family: 'SFUI';
         padding: 10px 30px;
         color: black;
@@ -418,7 +423,6 @@ h3{
         padding: 10px 95px;
     }
     #bordering {
-        /* border: 1px solid #0068fb; */
         padding: 10px;
         box-shadow: 0px 10px 30px 3px #119b1c;
       }
@@ -443,12 +447,11 @@ h3{
        background-color: #ffffff;
     }
     .boxRight {
-        top: 400px;
+        top: 2000px;
         height: 500px;
-        left: 225%;
-        min-width: auto;
-        max-width: 600px;
-        margin: 50px auto 0px;
+        width: 1000px;
+        left: 60%;
+        margin: 50px 311px 0px;
         background-color:white;
         border-radius: 30px;
         font-size: 1em;
@@ -458,9 +461,9 @@ h3{
         transition: .3s all;
     }
     .boxLeft {
-        top: 400px;
+        top: 2000px;
         height: 500px;
-        left: 69%;
+        left: 60%;
         min-width: auto;
         max-width: 600px;
         margin: 50px auto 0px;
@@ -474,14 +477,15 @@ h3{
     
     .titles{
         text-transform: uppercase;
-        position: absolute;
+        position: relative;
         top: 10px;
-        font-size: 33px;
+        font-size: 5em;
         text-align:left;
         padding: 2%;
         font-family: 'SFUI';
     }
     .context{
+        overflow: auto;
         text-transform:none;
         position: relative;
         margin-right: 0px;
@@ -489,15 +493,15 @@ h3{
         margin-bottom: 100px;
         text-align:left;
         left: 0px;
-        font-size: 25px;
+        font-size: 3em;
         padding: 0%;
         font-family: 'SFUI-light';
     }
     h1{
         text-transform: uppercase;
         top: 90px;
-        left: 19%;
-        font-size:6em;
+        left: 49%;
+        font-size:15em;
         font-family:'SFUI';
         position:absolute;
         /* background-image: url(images/profile.jpg);
@@ -507,9 +511,9 @@ h3{
     }
     h2{
         text-transform: uppercase;
-        top: 210px;
+        top: 260px;
         left: 25%;
-        font-size:6em;
+        font-size:15em;
         font-family:'SFUI';
         position:absolute;
         /* background-image: url(images/profile.jpg);
@@ -519,9 +523,9 @@ h3{
     }
     h3{
         text-transform: uppercase;
-        top: 450px;
+        top: 1450px;
         left: 8%;
-        font-size:6em;
+        font-size:13em;
         font-family:'SFUI';
         position:absolute;
         /* background-image: url(images/profile.jpg);
@@ -531,8 +535,8 @@ h3{
     }
     .dot{
         position:absolute;
-        left:275%;
-        top: 390px;
+        left:268%;
+        top: 670px;
         height: 95px;
         width: 95px;
         background-color: #f00a0a;
@@ -606,5 +610,8 @@ h3{
     @font-face {
         font-family: SFUI-light;
         src: url('fonts/SFUIText/SFUIText-Light.otf');
+    }
+    #bottomSpace{
+        padding-bottom: 6000px;
     }
 }
