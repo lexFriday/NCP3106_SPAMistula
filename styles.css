@@ -358,13 +358,13 @@ h3{
         transform: translateX(40px);
     }
     .navbar{
-        position: sticky;
+        position: static;
         top: 90;
         align-items: center;
         justify-content: space-between;
         overflow:scroll;
         list-style: none;
-        padding: 90px 100px;
+        padding: 90px 50px;
         display: inline-flex;
     
     }
