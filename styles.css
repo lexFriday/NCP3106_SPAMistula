@@ -325,23 +325,23 @@ h3{
         transform: translateX(10px);
     }
     .infoPicRight{
-        display: flex;
+        opacity: 0.2;
+        width: auto;
+        height: auto;
+        top: 110px;
+        left: 150px;
         position:relative;
-        top: 1800px;
-        right: 1%;
-        padding: 10;
-        max-width: 250px;
         transform: translateX(0x);
         transition: .3s all;
     }
     
     .infoPicLeft{
-        display: flex;
+        width: auto;
+        height: auto;
         position:relative;
-        top: 1800px;
-        left: 150%;
-        padding: 10;
-        max-width: 350px;
+        opacity: 0.2;
+        top: 110px;
+        left: 150px;
         transform: translateX(0x);
         transition: .3s all;
     }
@@ -433,7 +433,7 @@ h3{
        background-color: #ffffff;
     }
     .boxRight {
-        top: 2000px;
+        top: 1500px;
         height: 500px;
         width: 1000px;
         left: 150px;
@@ -446,12 +446,10 @@ h3{
         transition: .3s all;
     }
     .boxLeft {
-        top: 2000px;
+        top: 1500px;
         height: 500px;
-        left: 60%;
-        min-width: auto;
-        max-width: 600px;
-        margin: 150px;
+        left: 150px;
+        width: 1000px;
         background-color:white;
         border-radius: 30px;
         position: relative;
@@ -463,23 +461,19 @@ h3{
     .titles{
         text-transform: uppercase;
         position: relative;
-        top: 10px;
-        font-size: 5em;
+        top: -380px;
+        font-size: 3em;
         text-align:left;
         padding: 2%;
         font-family: 'SFUI';
     }
     .context{
         overflow: auto;
-        text-transform:none;
         position: relative;
-        margin-right: 0px;
         top: 90px;
-        margin-bottom: 100px;
         text-align:left;
-        left: 0px;
+        right: 10px;
         font-size: 3em;
-        padding: 0%;
         font-family: 'SFUI-light';
     }
     h1{
