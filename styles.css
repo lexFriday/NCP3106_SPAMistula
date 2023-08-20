@@ -135,9 +135,8 @@ body{
     position: relative;
 }
 #bg-img{
-    background-color: rgb(186, 251, 229);
    /* background-image: linear-gradient(rgb(18, 201, 48), rgb(218, 255, 218)); */
-   /* background-image: linear-gradient(#dff5ea, white, #dff5ea); */
+   background: linear-gradient(#dff5ea, white, #dff5ea);
 }
 .boxRight {
     top: 400px;
@@ -455,7 +454,7 @@ h3{
         position: relative;
     }
     #bg-img{
-       background-image: linear-gradient(#dff5ea, white, #dff5ea);
+        background: linear-gradient(#dff5ea, white, #dff5ea);
     }
     .boxRight {
         top: 1500px;
@@ -517,7 +516,7 @@ h3{
     }
     h3{
         text-transform: uppercase;
-        top: 1450px;
+        top: 820px;
         left: 20px;
         font-size:5.7em;
         font-family:'SFUI';
