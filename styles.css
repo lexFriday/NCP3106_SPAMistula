@@ -327,9 +327,9 @@ h3{
         display: flex;
         position:relative;
         top: 1800px;
-        left: 189%;
+        right: 1%;
         padding: 10;
-        max-width: 350px;
+        max-width: 250px;
         transform: translateX(0x);
         transition: .3s all;
     }
@@ -525,7 +525,7 @@ h3{
         text-transform: uppercase;
         top: 1450px;
         left: 8%;
-        font-size:13em;
+        font-size:inherit;
         font-family:'SFUI';
         position:absolute;
         /* background-image: url(images/profile.jpg);
