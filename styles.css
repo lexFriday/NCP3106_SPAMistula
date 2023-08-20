@@ -116,12 +116,12 @@
 #bordering {
     /* border: 1px solid #0068fb; */
     padding: 10px;
-    box-shadow: 0px 10px 30px 3px #282828;
+    box-shadow: 0px 10px 30px 3px #7fefac;
   }
   #profileBg {
     /* border: 1px solid #0068fb; */
     padding: 10px;
-    box-shadow: 0px 10px 30px -6px #000000;
+    box-shadow: 0px 10px 30px -6px #142a20;
   }
 body{
     min-height: 100vh;
@@ -435,7 +435,7 @@ h3{
     }
     #bordering {
         padding: 10px;
-        box-shadow: 0px 10px 30px 3px #616161;
+        box-shadow: 0px 10px 30px 3px #ffffff;
       }
       #profileBg {
         /* border: 1px solid #0068fb; */
