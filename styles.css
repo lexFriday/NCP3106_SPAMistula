@@ -435,7 +435,7 @@ h3{
     }
     #bordering {
         padding: 10px;
-        box-shadow: 0px 10px 30px 3px #ffffff;
+        box-shadow: 0px 10px 30px 3px #57e78c;
       }
       #profileBg {
         /* border: 1px solid #0068fb; */
@@ -535,15 +535,16 @@ h3{
     .footer{
         position: sticky;
         height: 400px;
-        width: 400%;
-        background-color: rgb(0, 0, 0);
+        width: 900px;
+        background: black;
     }
     
     .footer h{
         position: absolute;
         font-family: SFUI;
         color: white;
-        font-size: 4em;
+        font-size: 2em;
+        width: 400px;
         padding: 20px;
     }
     
@@ -551,6 +552,7 @@ h3{
         position: absolute;
         font-family: SFUI-light;
         color: white;
+        width: 300px;
         font-size: 1.6em;
         top: 55px;
         padding: 20px;
@@ -558,7 +560,7 @@ h3{
     #moreTxt{
         position: absolute;
         font-family: SFUI-light;
-        left: 700px;
+        left: 350px;
         color: white;
         font-size: 1.6em;
         top: 230px;
@@ -601,6 +603,6 @@ h3{
         src: url('fonts/SFUIText/SFUIText-Light.otf');
     }
     #bottomSpace{
-        padding-bottom: 6000px;
+        padding-bottom: 2000px;
     }
 }
