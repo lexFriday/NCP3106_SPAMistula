@@ -42,11 +42,11 @@
 }
 .boxLeft:hover{
     box-shadow: 6px 6px 40px 10px;
-    transform: translateX(40px);
+    transform: translateY(40px);
 }
 .boxRight:hover{
     box-shadow: 6px 6px 40px 10px;
-    transform: translateX(40px);
+    transform: translateY(40px);
 }
 .navbar{
     position: sticky;
@@ -335,7 +335,6 @@ h3{
         transform: translateX(0x);
         transition: .3s all;
     }
-    
     .infoPicLeft{
         width: auto;
         height: auto;
@@ -365,6 +364,14 @@ h3{
     .infoPicRight:hover{
         opacity: 0.5;
     }
+    .navbar{
+        width:720px;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        justify-content: space-between;
+
+    }
     /* .navbar{
         position: sticky;
         margin: 0;
@@ -381,10 +388,11 @@ h3{
     .navbar li{
         float: left;
         transform: translateX(0x);
+        align-items: center;
         transition: .3s all;
     }
     .navbar a{
-        display: block;
+        display: inline-flex;
         text-transform: uppercase;
         text-align: center;
         font-size: 20px;
@@ -436,7 +444,6 @@ h3{
         position: relative;
     }
     #bg-img{
-       /* background-image: linear-gradient(rgb(18, 201, 48), rgb(218, 255, 218)); */
        background-image: linear-gradient(#dff5ea, white, #dff5ea);
     }
     .boxRight {
