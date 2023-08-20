@@ -372,22 +372,16 @@ h3{
         justify-content: space-between;
 
     }
-    /* .navbar{
+    .navbar{
         position: sticky;
         margin: 0;
-        padding: 30px 500px;
         top: 0;
         justify-content: space-between;
         overflow:hidden;
         list-style-type: none;
-    
-        padding: 90px center;
-        display: block;
-    
-    } */
-    .navbar li{
+    } 
+    /* .navbar li{
         float: left;
-        transform: translateX(0x);
         align-items: center;
         transition: .3s all;
     }
@@ -409,18 +403,34 @@ h3{
         padding: 10px 95px;
         color: white;
     }
-    .btnBg a:hover{
-        border-radius: 40px;
+    .facebook a:hover{
+        border-radius: 10px;
+        font-size: 20px;
+        background: linear-gradient(rgb(55, 143, 232), rgb(13, 80, 162));
+        transition: .3s;
+        padding: 10px 95px;
+        color: white;
+    }
+    .instagram a:hover{
+        border-radius: 10px;
+        font-size: 20px;
+        background: linear-gradient(rgb(182, 21, 223), rgb(212, 12, 12));
+        transition: .3s;
+        padding: 10px 95px;
+        color: white;
+    }
+    /* .btnBg a:hover{
+        border-radius: 5px;
         font-size: 20px;
         background: rgb(24, 206, 109);
         transition: .3s;
         padding: 10px 95px;
         color: white;
-    }
+    } */
     .btnBg{
         background: black;
         color: white;
-        border-radius: 40px;
+        border-radius:40px;
         padding: 10px 95px;
     }
     #bordering {
@@ -481,12 +491,10 @@ h3{
         font-family: 'SFUI';
     }
     .context{
-        overflow: auto;
         position: relative;
-        top: 90px;
-        text-align:left;
-        right: 10px;
-        font-size: 3em;
+        top: -470px;
+        width: 400px;
+        font-size: 1.8em;
         font-family: 'SFUI-light';
     }
     h1{
