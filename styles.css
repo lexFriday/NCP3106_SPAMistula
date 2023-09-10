@@ -306,7 +306,7 @@ h3{
 
 
 /* Mobile View */
-@media only screen and (max-width:1080px){
+@media only screen and (max-width:3080px){
     *{
         width: 0;
     }
