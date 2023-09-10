@@ -594,7 +594,12 @@ h3{
         height: 69px;
         width: 69px;
     }
- 
+    #jumpStart a{
+        color: black;
+        font-size: 300px;
+        left: 150%;
+        text-decoration: none;
+    }
     @font-face {
         font-family:"SFUI";
         src: url('fonts/SFUIText/SFUIText-Heavy.otf');
