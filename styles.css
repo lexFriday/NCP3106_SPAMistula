@@ -1,618 +1,165 @@
+/* Modern responsive UI stylesheet */
 
-.profile{
-    display: flex;
-    position:relative;
-    top: 100px;
-    left: 56%;
-    padding: 10;
-    max-width: 350px;
-    border-radius: 100px;
-    transform: translateX(0x);
-    transition: .3s all;
-}
-.profile:hover{
-    border-radius: 40px;
-    box-shadow: 6px 6px 40px 10px;
-    transform: translateX(10px);
-}
-.infoPicRight{
-    display: flex;
-    position:absolute;
-    top: 100px;
-    right: 150%;
-    padding: 10;
-    max-width: 350px;
-    transform: translateX(0x);
-    transition: .3s all;
+/* Reset */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+/* Fonts */
+@font-face { font-family: "SFUI"; src: url('fonts/SFUIText/SFUIText-Heavy.otf'); }
+@font-face { font-family: SFUI-light; src: url('fonts/SFUIText/SFUIText-Light.otf'); }
+
+/* Design tokens */
+:root {
+    --bg-gradient-start: #dff5ea;
+    --bg-gradient-mid: #ffffff;
+    --bg-gradient-end: #dff5ea;
+    --text-color: #0e1b14;
+    --muted-text: #315345;
+    --accent: #18ce6d;
+    --surface: #ffffff;
+    --shadow: 0 12px 30px rgba(20,42,32,0.15);
+    --radius: 24px;
+    --radius-pill: 9999px;
+    --space-1: 8px;
+    --space-2: 12px;
+    --space-3: 16px;
+    --space-4: 24px;
+    --space-5: 32px;
+    --space-6: 48px;
 }
 
-.infoPicLeft{
-    display: flex;
-    position:absolute;
-    top: 100px;
-    left: 150%;
-    padding: 10;
-    max-width: 350px;
-    transform: translateX(0x);
-    transition: .3s all;
-}
-.btnBg:hover{
-    border-radius: 40px;
-    box-shadow: 6px 6px 40px 10px;
-    transform: translateX(10px);
-}
-.boxLeft:hover{
-    box-shadow: 6px 6px 40px 10px;
-    transform: translateY(40px);
-}
-.boxRight:hover{
-    box-shadow: 6px 6px 40px 10px;
-    transform: translateY(40px);
-}
-.navbar{
-    position: sticky;
-    top: 0;
-    align-items: center;
-    justify-content: space-between;
-    overflow:hidden;
-    list-style: none;
-    padding: 10px 100px;
-    display:flex;
-
-}
-.navbar li{
-    float:left;
-    position: relative;
-    transform: translateX(0x);
-    transition: .3s all;
-}
-.navbar a{
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 15px;
-    font-family: 'SFUI';
-    padding: 10px 30px;
-    color: black;
-    display: inline-block;
-    text-decoration: none;
-}
-.homeclr a:hover{
-    border-radius: 40px;
-    font-size: 20px;
-    background: rgb(24, 206, 109);
-    transition: .3s;
-    padding: 10px 95px;
-    color: white;
-}
-.facebook a:hover{
-    border-radius: 40px;
-    font-size: 20px;
-    background: linear-gradient(rgb(55, 143, 232), rgb(13, 80, 162));
-    transition: .3s;
-    padding: 10px 95px;
-    color: white;
-}
-.instagram a:hover{
-    border-radius: 40px;
-    font-size: 20px;
-    background: linear-gradient(rgb(182, 21, 223), rgb(212, 12, 12));
-    transition: .3s;
-    padding: 10px 95px;
-    color: white;
-}
-.btnBg a:hover{
-    border-radius: 40px;
-    font-size: 20px;
-    background: rgb(24, 206, 109);
-    transition: .3s;
-    padding: 10px 95px;
-    color: white;
-}
-.btnBg{
-    background: black;
-    color: white;
-    border-radius: 40px;
-    padding: 10px 95px;
-}
-#bordering {
-    /* border: 1px solid #0068fb; */
-    padding: 10px;
-    box-shadow: 0px 10px 30px 3px #7fefac;
-  }
-  #profileBg {
-    /* border: 1px solid #0068fb; */
-    padding: 10px;
-    box-shadow: 0px 10px 30px -6px #142a20;
-  }
-body{
+body {
     min-height: 100vh;
     width: 100%;
-    padding: 0;
-}
-.main{
-    position: relative;
-}
-.mainlayout{
-    position: relative;
-}
-#bg-img{
-   /* background-image: linear-gradient(rgb(18, 201, 48), rgb(218, 255, 218)); */
-   background: linear-gradient(#dff5ea, white, #dff5ea);
-}
-.boxRight {
-    top: 400px;
-    height: 500px;
-    left: 26%;
-    min-width: auto;
-    max-width: 600px;
-    margin: 50px auto 0px;
-    background-color:white;
-    border-radius: 30px;
-    font-size: 1em;
-    position: relative;
-    margin-top: 50px;
-    transform: translateX(0x);
-    transition: .3s all;
-}
-.boxLeft {
-    top: 400px;
-    height: 500px;
-    right: 26%;
-    min-width: auto;
-    max-width: 600px;
-    margin: 50px auto 0px;
-    background-color:white;
-    border-radius: 30px;
-    position: relative;
-    margin-top: 50px;
-    transform: translateX(0x);
-    transition: .3s all;
+    background: linear-gradient(var(--bg-gradient-start), var(--bg-gradient-mid), var(--bg-gradient-end));
+    color: var(--text-color);
+    font-family: SFUI-light, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
 }
 
-.titles{
-    text-transform: uppercase;
-    position: absolute;
-    top: 200px;
-    font-size: 33px;
-    text-align: center;
-    padding: 2%;
-    font-family: 'SFUI';
+/* Layout helper */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 var(--space-4); }
+
+/* Navbar */
+.navbar {
+    position: sticky; top: 0; z-index: 1000;
+    display: flex; align-items: center; gap: var(--space-2);
+    list-style: none; margin: 0; padding: var(--space-3) var(--space-4);
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: saturate(1.2) blur(8px);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
 }
-.context{
-    text-transform:none;
-    position: relative;
-    margin-right: 200px;
-    margin-bottom: 100px;
-    text-align:left;
-    left: 200px;
-    font-size: 29px;
-    padding: 0%;
-    font-family: 'SFUI-light';
+.navbar li { display: flex; }
+.navbar a {
+    display: inline-flex; align-items: center; justify-content: center;
+    text-transform: uppercase; text-decoration: none;
+    font-size: 14px; letter-spacing: .06em; font-weight: 600;
+    padding: 10px 18px; border-radius: var(--radius-pill);
+    color: var(--text-color);
+    transition: transform .2s ease, background-color .2s ease, color .2s ease;
 }
-h1{
-    text-transform: uppercase;
-    top: 90px;
-    left: 19%;
-    font-size:6em;
-    font-family:'SFUI';
-    position:absolute;
-    /* background-image: url(images/profile.jpg);
-    background-size: 100% 100%;
-    color: transparent;
-    -webkit-background-clip:text; */
+.navbar a:hover { background: rgba(24,206,109,0.15); color: #0b3b22; transform: translateY(-1px); }
+.btnBg a { background: #0b0b0b; color: #fff; }
+.btnBg a:hover { background: var(--accent); color: #fff; }
+.homeclr a:hover { background: var(--accent); color: #fff; }
+.facebook a:hover { background: linear-gradient(180deg, rgb(55, 143, 232), rgb(13, 80, 162)); color: #fff; }
+.instagram a:hover { background: linear-gradient(180deg, rgb(182, 21, 223), rgb(212, 12, 12)); color: #fff; }
+
+/* Hero */
+.main { padding: var(--space-6) 0; }
+.hero { display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: var(--space-6); }
+.hero-text { position: relative; padding: var(--space-5) 0; }
+.hero-text h1 { margin: 0; font-family: SFUI; text-transform: uppercase; font-size: clamp(40px, 8vw, 96px); }
+.hero-text h2 { margin: 0; font-family: SFUI; text-transform: uppercase; font-size: clamp(36px, 7vw, 84px); }
+.hero-text h3 { margin: var(--space-3) 0 0 0; font-family: SFUI; text-transform: uppercase; color: var(--muted-text); font-size: clamp(24px, 6vw, 72px); }
+.dot { position: absolute; right: 15px; top: 15px; height: 32px; width: 32px; background-color: #f00a0a; border-radius: 50%; z-index: 10; }
+
+.hero-image { display: flex; justify-content: center; position: relative; }
+.profile { width: 100%; max-width: 380px; aspect-ratio: 1/1; object-fit: cover; border-radius: 32px; box-shadow: var(--shadow); transition: transform .3s ease, border-radius .3s ease; position: relative; }
+.profile:hover { transform: translateY(-4px); border-radius: 20px; }
+#profileBg { padding: 10px; box-shadow: 0 10px 30px -6px #142a20; }
+
+/* Content boxes */
+.boxLeft, .boxRight { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: var(--space-5); margin: var(--space-5) 0; }
+.boxLeft { display: flex; align-items: center; gap: var(--space-5); }
+.boxRight { display: flex; align-items: center; gap: var(--space-5); flex-direction: row-reverse; }
+.infoPicLeft, .infoPicRight { width: 160px; height: 160px; object-fit: contain; opacity: .95; filter: drop-shadow(0 8px 18px rgba(0,0,0,.12)); }
+.titles { margin: 0 0 var(--space-2) 0; text-transform: uppercase; font-family: SFUI; font-size: 28px; }
+.context { margin: 0; font-size: 18px; color: var(--muted-text); }
+.bordering { padding: 10px; box-shadow: 0 10px 30px 3px #7fefac; }
+
+/* Footer */
+.footer { background: #000; color: #fff; margin-top: var(--space-6); padding: var(--space-6) 0; }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: var(--space-5); }
+.footer-info h2 { margin: 0 0 var(--space-2) 0; font-family: SFUI; font-size: clamp(24px, 3vw, 40px); }
+#aboutMore { margin: 0 0 var(--space-2) 0; font-family: SFUI-light; font-size: clamp(16px, 2vw, 20px); }
+#moreTxt { margin: var(--space-4) 0 0 0; font-family: SFUI-light; opacity: .7; }
+.socials { display: flex; gap: var(--space-3); margin-top: var(--space-3); }
+#facebookLG, #instagramLG { height: 40px; width: 40px; }
+#logoPic { height: auto; max-height: 180px; width: auto; }
+
+/* Background hook */
+#bg-img { background: linear-gradient(var(--bg-gradient-start), var(--bg-gradient-mid), var(--bg-gradient-end)); }
+#bottomSpace { padding-bottom: var(--space-6); }
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; gap: var(--space-5); }
+    .hero-text { text-align: center; }
+    .dot { left: 50%; transform: translateX(-50%); }
+    .boxLeft, .boxRight { flex-direction: column; text-align: center; }
 }
-h2{
-    text-transform: uppercase;
-    top: 210px;
-    left: 25%;
-    font-size:6em;
-    font-family:'SFUI';
-    position:absolute;
-    /* background-image: url(images/profile.jpg);
-    background-size: 100% 100%;
-    color: transparent;
-    -webkit-background-clip:text; */
-}
-h3{
-    text-transform: uppercase;
-    top: 450px;
-    left: 8%;
-    font-size:9em;
-    font-family:'SFUI';
-    position:absolute;
-    /* background-image: url(images/profile.jpg);
-    background-size: 100% 100%;
-    color: transparent;
-    -webkit-background-clip:text; */
-}
-.dot{
-    position:absolute;
-    right: 40%;
-    top: 410px;
-    height: 95px;
-    width: 95px;
-    background-color: #f00a0a;
-    border-radius: 50%;
-    display: inline-block;
-}
-.footer{
-    position: sticky;
-    height: 400px;
-    background-color: rgb(0, 0, 0);
-    display: block;
+@media (max-width: 600px) {
+    .navbar { padding: var(--space-2) var(--space-3); gap: var(--space-1); }
+    .navbar a { padding: 8px 12px; font-size: 12px; }
+    .infoPicLeft, .infoPicRight { width: 120px; height: 120px; }
 }
 
-.footer h{
-    position: absolute;
-    font-family: SFUI;
-    color: white;
-    font-size: 4em;
-    padding: 20px;
+/* Fun interactions (restored) */
+.profile { border-radius: 100px; position: relative; }
+.profile:hover {
+    transform: translateX(10px);
+    border-radius: 40px;
+    box-shadow: 6px 6px 40px 10px rgba(0,0,0,0.25);
 }
 
-#aboutMore{
-    position: absolute;
-    font-family: SFUI-light;
-    color: white;
-    font-size: 1.6em;
-    top: 55px;
-    padding: 20px;
-}
-#moreTxt{
-    position: absolute;
-    font-family: SFUI-light;
-    left: 700px;
-    color: white;
-    font-size: 1.6em;
-    top: 230px;
-    padding: 20px;
-}
-#logoPic{
-    position: absolute;
-    right: 0;
-    color: white;
-    height: 200px;
-    width: 400px;
-    padding: 20px;
-}
-#facebookLG{
-    position: relative;
-    top: 300px;
-    left: 20px;
-    color: white;
-    height: 69px;
-    width: 69px;
-}
-#instagramLG{
-    position: relative;
-    top: 300px;
-    left: 20px;
-    color: white;
-    height: 69px;
-    width: 69px;
-}
-@font-face {
-    font-family:"SFUI";
-    src: url('fonts/SFUIText/SFUIText-Heavy.otf');
-}
-@font-face {
-    font-family: SFUI-light;
-    src: url('fonts/SFUIText/SFUIText-Light.otf');
-}
-#bottomSpace{
-    padding-bottom: 600px;
-}
+.boxLeft, .boxRight { transition: transform .3s ease, box-shadow .3s ease; }
+.boxLeft:hover, .boxRight:hover { box-shadow: 6px 6px 40px 10px rgba(0,0,0,0.2); transform: translateY(40px); }
 
+.infoPicLeft:hover, .infoPicRight:hover { opacity: 0.5; }
 
-
-/* Mobile View */
-@media only screen and (max-width:3080px){
-    *{
-        width: 0;
-    }
-    .profile{
-        left: 310px;
-        position:relative;
-        height: 300px;
-        width: 300px;
-        top: 300px;
-        border-radius: 50px;
-        transform: translateX(0x);
-        transition: .3s all;
-    }
-    .profile:hover{
-        border-radius: 5px;
-        height: 350px;
-        box-shadow: 6px 6px 40px 10px;
+.homeclr a:hover {
+    border-radius: 40px;
+    font-size: 20px;
+    background: var(--accent);
+    transition: .3s;
+    padding: 10px 95px;
+    color: #fff;
+}
+.facebook a:hover {
+    border-radius: 40px;
+    font-size: 20px;
+    background: linear-gradient(180deg, rgb(55,143,232), rgb(13,80,162));
+    transition: .3s;
+    padding: 10px 95px;
+    color: #fff;
+}
+.instagram a:hover {
+    border-radius: 40px;
+    font-size: 20px;
+    background: linear-gradient(180deg, rgb(182,21,223), rgb(212,12,12));
+    transition: .3s;
+    padding: 10px 95px;
+    color: #fff;
+}
+.btnBg a { border-radius: 40px; padding: 10px 95px; }
+.btnBg a:hover {
+    border-radius: 40px;
+    font-size: 20px;
+    background: var(--accent);
+    transition: .3s;
+    padding: 10px 95px;
+    color: #fff;
         transform: translateX(10px);
-    }
-    .infoPicRight{
-        opacity: 0.1;
-        width: auto;
-        height: auto;
-        top: 110px;
-        left: 150px;
-        position:relative;
-        transform: translateX(0x);
-        transition: .3s all;
-    }
-    .infoPicLeft{
-        width: auto;
-        height: auto;
-        position:relative;
-        opacity: 0.1;
-        top: 110px;
-        left: 150px;
-        transform: translateX(0x);
-        transition: .3s all;
-    }
-    .btnBg:hover{
-        border-radius: 40px;
-        box-shadow: 6px 6px 40px 10px;
-        transform: translateX(10px);
-    }
-    .boxLeft:hover{
-        color: rgb(8, 68, 2);
-        transform: translateY(40px);
-    }
-    .infoPicLeft:hover{
-        opacity: 0.5;
-    }
-    .boxRight:hover{
-        color: rgb(4, 65, 0);
-        transform: translateY(40px);
-    }
-    .infoPicRight:hover{
-        opacity: 0.5;
-    }
-    .navbar{
-        width:720px;
-        position: sticky;
-        top: 0;
-        overflow: hidden;
-        justify-content: space-between;
-
-    }
-    .navbar{
-        position: sticky;
-        margin: 0;
-        top: 0;
-        justify-content: space-between;
-        overflow:hidden;
-        list-style-type: none;
-    } 
-    .navbar a{
-        display: inline-flex;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 25px;
-        font-family: 'SFUI';
-        padding: 10px 10px;
-        color: black;
-        text-decoration: none;
-    }
-    /* .navbar li{
-        float: left;
-        align-items: center;
-        transition: .3s all;
-    }
-    .homeclr a:hover{
-        border-radius: 40px;
-        font-size: 20px;
-        background: rgb(24, 206, 109);
-        transition: .3s;
-        padding: 10px 95px;
-        color: white;
-    }
-    .facebook a:hover{
-        border-radius: 10px;
-        font-size: 20px;
-        background: linear-gradient(rgb(55, 143, 232), rgb(13, 80, 162));
-        transition: .3s;
-        padding: 10px 95px;
-        color: white;
-    }
-    .instagram a:hover{
-        border-radius: 10px;
-        font-size: 20px;
-        background: linear-gradient(rgb(182, 21, 223), rgb(212, 12, 12));
-        transition: .3s;
-        padding: 10px 95px;
-        color: white;
-    }
-    /* .btnBg a:hover{
-        border-radius: 5px;
-        font-size: 20px;
-        background: rgb(24, 206, 109);
-        transition: .3s;
-        padding: 10px 95px;
-        color: white;
-    } */
-    .btnBg{
-        background: black;
-        color: white;
-        border-radius:40px;
-        padding: 10px 95px;
-    }
-    #bordering {
-        padding: 10px;
-        box-shadow: 0px 10px 30px 3px #57e78c;
-      }
-      #profileBg {
-        /* border: 1px solid #0068fb; */
-        padding: 10px;
-        box-shadow: 0px 10px 30px -6px #000000;
-      }
-    body{
-        min-height: 100vh;
-        width: 100%;
-        padding: 0;
-    }
-    .main a{
-        top: 1000px;
-        left: 370px;
-        position: absolute;
-        font-size: 50px;
-    }
-    .mainlayout{
-        position: relative;
-    }
-    #bg-img{
-        background: linear-gradient(#dff5ea, white, #dff5ea);
-    }
-    .boxRight {
-        top: 1500px;
-        height: 600px;
-        width: 1000px;
-        left: 150px;
-        background-color:white;
-        border-radius: 30px;
-        font-size: 1em;
-        position: relative;
-        transform: translateX(0x);
-        transition: .3s all;
-    }
-    .boxLeft {
-        top: 1500px;
-        height: 600px;
-        left: 150px;
-        width: 1000px;
-        background-color:white;
-        border-radius: 30px;
-        position: relative;
-        transform: translateX(0x);
-        transition: .3s all;
-    }
-    
-    .titles{
-        text-transform: uppercase;
-        position: relative;
-        top: 90px;
-        font-size: 3em;
-        text-align:left;
-        padding: 2%;
-        font-family: 'SFUI';
-    }
-    .context{
-        position: relative;
-        top: -490px;
-        width: 400px;
-        font-size: 2em;
-        
-        font-family: 'SFUI-light';
-    }
-    h1{
-        text-transform: uppercase;
-        margin: auto;
-        top: 650px;
-        left: 140px;
-        font-size:7em;
-        font-family:'SFUI';
-        position:absolute;
-    }
-    h2{
-        text-transform: uppercase;
-        top: 650px;
-        left: 340px;
-        font-size:7em;
-        font-family:'SFUI';
-        position:absolute;
-    }
-    h3{
-        text-transform: uppercase;
-        top: 1220px;
-        left: 20px;
-        font-size:5.7em;
-        font-family:'SFUI';
-        position:absolute;
-    }
-    .dot{
-        position:absolute;
-        left:275px;
-        top: 570px;
-        height: 95px;
-        width: 95px;
-        background-color: #f00a0a;
-        border-radius: 50%;
-        display: inline-block;
-    }
-    .footer{
-        position: sticky;
-        height: 400px;
-        width: 900px;
-        background: black;
-    }
-    
-    .footer h{
-        position: absolute;
-        font-family: SFUI;
-        color: white;
-        font-size: 2em;
-        width: 400px;
-        padding: 20px;
-    }
-    
-    #aboutMore{
-        position: absolute;
-        font-family: SFUI-light;
-        color: white;
-        width: 300px;
-        font-size: 1.6em;
-        top: 55px;
-        padding: 20px;
-    }
-    #moreTxt{
-        position: absolute;
-        font-family: SFUI-light;
-        left: 350px;
-        color: white;
-        font-size: 1.6em;
-        top: 230px;
-        padding: 20px;
-    }
-    #logoPic{
-        position: absolute;
-        right: 0;
-        color: white;
-        height: 200px;
-        width: 400px;
-        padding: 20px;
-    }
-    #facebookLG{
-        position: relative;
-        top: 300px;
-        left: 20px;
-        color: white;
-        height: 69px;
-        width: 69px;
-    }
-    #instagramLG{
-        position: relative;
-        top: 300px;
-        left: 20px;
-        color: white;
-        height: 69px;
-        width: 69px;
-    }
-    #jumpStart a{
-        color: black;
-        font-size: 300px;
-        left: 150%;
-        text-decoration: none;
-    }
-    @font-face {
-        font-family:"SFUI";
-        src: url('fonts/SFUIText/SFUIText-Heavy.otf');
-    }
-    @font-face {
-        font-family: SFUI-light;
-        src: url('fonts/SFUIText/SFUIText-Light.otf');
-    }
-    @font-face {
-        font-family: SFUI-light;
-        src: url('fonts/SFUIText/SFUIText-Light.otf');
-    }
-    #bottomSpace{
-        padding-bottom: 2000px;
-    }
+    box-shadow: 6px 6px 40px 10px rgba(0,0,0,0.25);
 }
