@@ -1,0 +1,56 @@
+name: portfolio_app
+description: Shaun Mistula's Portfolio - Flutter Version
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.1.14
+  http: ^1.1.0
+  video_player: ^2.8.1
+  video_player_web: ^2.1.1
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/images/photography/
+    - assets/images/about/
+    - assets/data/
+    - assets/pdf/
+  
+  fonts:
+    - family: SFUI
+      fonts:
+        - asset: assets/fonts/SFUIText-Heavy.otf
+          weight: 900
+    - family: SFUI-light
+      fonts:
+        - asset: assets/fonts/SFUIText-Light.otf
+          weight: 300
+    - family: SamsungSharp
+      fonts:
+        - asset: fonts/SamsungSharp/SamsungSharpSans-Regular.ttf
+          weight: 400
+        - asset: fonts/SamsungSharp/SamsungSharpSans-Medium.ttf
+          weight: 500
+        - asset: fonts/SamsungSharp/SamsungSharpSans-Bold.ttf
+          weight: 700
+    - family: SamsungOne
+      fonts:
+        - asset: fonts/SamsungSharp/SamsungOne-700_v1.0.ttf
+          weight: 700
+        - asset: fonts/SamsungSharp/SamsungOne-800_v1.0.ttf
+          weight: 800
